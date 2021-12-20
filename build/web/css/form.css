@@ -1,0 +1,285 @@
+/* @extend display-flex; */
+display-flex, .signup-content, .form-row, .label-flex {
+    display: flex;
+    display: -webkit-flex; }
+  
+  /* @extend list-type-ulli; */
+  list-type-ulli, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  
+  
+ 
+  
+  input, select, textarea {
+    outline: none;
+    appearance: unset !important;
+    -moz-appearance: unset !important;
+    -webkit-appearance: unset !important;
+    -o-appearance: unset !important;
+    -ms-appearance: unset !important; }
+  
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    margin: 0; }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -ms-box-shadow: none !important; }
+  
+  
+  input:-webkit-autofill {
+    box-shadow: 0 0 0 30px transparent inset;
+    -moz-box-shadow: 0 0 0 30px transparent inset;
+    -webkit-box-shadow: 0 0 0 30px transparent inset;
+    -o-box-shadow: 0 0 0 30px transparent inset;
+    -ms-box-shadow: 0 0 0 30px transparent inset;
+    background-color: transparent !important; }
+  
+  img {
+    max-width: 100%;
+    height: auto; }
+  
+  figure {
+    margin: 0; }
+  
+  
+  h2 {
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: #fff;    
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  
+  .clear {
+    clear: both; }
+    
+  .main {
+    position: relative; }
+  .venta-confirmacion h5, label {
+    color: #435d7d;
+  }
+  .venta-confirmacion p {
+    color: #435d7d;
+    font-size: medium;
+  }
+  .venta-confirmacion-item {
+    margin: 20px auto;
+  }
+  .container-form {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #222;
+    font-weight: 500;
+    width: 1400px;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 5px 0;
+    background: #fff; }
+  
+  .signup-img {
+    position: relative;
+    width: 385px;
+    margin-bottom: -8px; }
+  
+  .signup-form {
+    width: 1015px;
+    margin-top: -2px; }
+  
+  .signup-img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; }
+  
+  .register-form {
+    padding: 93px 115px 90px 80px;
+    margin-bottom: -8px; }
+  
+  .form-row {
+    margin: 0 -30px; }
+    .form-row .form-group {
+      width: 50%;
+      padding: 0 30px; }
+  
+  .form-input, .form-select {
+    margin-bottom: 23px; }
+  
+  label, input, select, textarea {
+    display: block;
+    width: 100%; }
+  
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 7px; }
+  
+    
+  input, select, textarea {
+    box-sizing: border-box;
+    border: 1px solid #ebebeb;
+    padding: 14px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    font-size: 14px; }
+    input:focus, select:focus {
+      border: 1px solid #435d7d; }
+  
+  textarea {
+    height: 103px;
+  }
+  .label-flex {
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between; }
+    .label-flex label {
+      width: auto; }
+  
+  .form-link {
+    font-size: 12px;
+    color: #222;
+    text-decoration: none;
+    position: relative; }
+    .form-link:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #d7d7d7;
+      left: 0;
+      bottom: 12px; }
+  
+  .form-submit {
+    text-align: right; }
+  
+  .submit {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px; }
+  
+  #reset {
+    background: #fff;
+    color: #999;
+    border: 2px solid #ebebeb; }
+    #reset:hover {
+      border: 2px solid #da6390;
+      background: #f08187;
+      color: rgb(231, 231, 231); }
+  
+  #submit {
+    background: #435d7d;
+    color: #fff;
+    margin-right: 25px; }
+    #submit:hover {
+      background-color: #194070; }
+  
+  .form-input {
+    position: relative; }
+  
+  label.error {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0; }
+    label.error:after {
+      font-family: 'Material-Design-Iconic-Font';
+      position: absolute;
+      content: '\f1f8';
+      right: 20px;
+      top: 37px;
+      font-size: 23px;
+      color: #c70000; }
+  
+  input.error {
+    border: 1px solid #c70000; }
+  
+  .select-list {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 47px; }
+  
+  .list-item {
+    position: absolute;
+    width: 100%;
+    z-index: 99; }
+  
+  @media screen and (max-width: 1024px) {
+    .container {
+      width: calc( 100% - 30px);
+      max-width: 100%;
+      margin: 0 auto; }
+  
+    .signup-img {
+      display: none; }
+  
+    .signup-form {
+      width: 100%; }
+  
+    .register-form {
+      padding: 93px 80px 90px 80px; } }
+  @media screen and (max-width: 992px) {
+    .signup-content {
+      width: 100%; }
+  
+    
+    .register-form {
+      padding: 93px 30px 90px 30px; } }
+  @media screen and (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -o-flex-direction: column;
+      -ms-flex-direction: column;
+      margin: 0px; }
+  
+    .form-row .form-group {
+      width: 100%;
+      padding: 0 0px; } }
+  @media screen and (max-width: 480px) {
+    .submit {
+      width: 100%; }
+  
+    #submit {
+      margin-bottom: 20px;
+      margin-right: 0px; }
+  
+   }
+  
+  /*# sourceMappingURL=style.css.map */
+  
