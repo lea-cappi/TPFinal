@@ -67,6 +67,7 @@
                       <ul class="dropdown">
                         <li><a href="adminCiudades.jsp">Ciudades</a></li>
                         <li><a href="addCiudad.jsp">Agregar Ciudad</a></li>
+                        <form action="SvPais"
                         <li><a href="adminPaises.jsp">Paises</a></li>
                         <li><a href="addPais.jsp">Agregar Pais</a></li>
                       </ul>

@@ -150,7 +150,7 @@
                 </div>
             </div>
             <div class="signup-form">
-                <form method="POST" class="register-form" id="register-form">
+                <form action="SvPais" method="POST" class="register-form" id="register-form">
                   <div class="form-group">
                     <div class="form-input">
                         <label>Nombre</label>
@@ -158,8 +158,8 @@
                     </div>
                   </div>
                   <div class="form-submit">
-                      <input type="submit" value="Agregar" class="submit" name="submit" id="submit"/>
-                      <input type="submit" value="Reset" class="submit" name="reset" id="reset"/>
+                      <button type="submit" class="submit" id="submit">Agregar</button>
+                      
                   </div>
                 </form>
             </div>

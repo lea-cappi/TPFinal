@@ -1,6 +1,7 @@
 
 package logica;
 
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.Entity;
@@ -10,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class Paquete {
+public class Paquete implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private int idPaquete;

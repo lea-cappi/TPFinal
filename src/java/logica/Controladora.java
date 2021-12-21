@@ -7,6 +7,13 @@ public class Controladora {
     
     ControladoraPersistencia controlPersis = new ControladoraPersistencia ();
     
+    public void crearPais (String nombre){
+        Pais pais = new Pais ();
+        pais.setNombre(nombre);
+        
+        controlPersis.crearPais(pais);
+    };
+    
     /*public int verificarUsuario (String usuario, String pass) {
         List<Usuario> listaUsuarios = controlPersis.traerUsuarios();
     

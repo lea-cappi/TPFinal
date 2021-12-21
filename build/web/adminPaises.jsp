@@ -4,6 +4,8 @@
     Author     : leand
 --%>
 
+<%@page import="logica.Pais"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -169,12 +171,21 @@
                 </tr>
               </thead>
               <tbody>
+                  <% HttpSession misession = request.getSession ();
+                  List <Pais> listaPaises = (List) request.getSession().getAttribute("listaPaises");
+                  for (Pais ispa : listaPaises){
+                      %>
+                  
                 <tr>
-                  <td>Rusia</td>
+                    <%String nombre = ispa.getNombre();%>
+                  <td><%=nombre %></td>
                   <td>
-                    <a href="modPais.html" class="edit"><i class="material-icons" data-toggle="tooltip" title="Modificar">&#xE254;</i></a>
+                      <%int id = ispa.getIdPais();%>
+                      <form name="modPais" action="SvModPais" method="post"
+                    <a href="SvModPais" class="submit"><i class="material-icons" data-toggle="tooltip" title="Modificar">&#xE254;</i></a>
                     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                   </td>
+                  <%}%>
                 </tr>
                 <tr>
                   <td>Indonesia</td>
