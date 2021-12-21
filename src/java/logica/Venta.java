@@ -2,10 +2,18 @@
 package logica;
 
 import java.util.Date;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-
+@Entity
 public class Venta {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int idVenta;
+    @Basic
     private Date fechaVenta;
     private double subtotal;
     private double recargoMedioPago;

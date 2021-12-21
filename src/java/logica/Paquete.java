@@ -2,15 +2,25 @@
 package logica;
 
 import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
-
+@Entity
 public class Paquete {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int idPaquete;
+    @Basic
     private String nombre;
     private String descripcion;
-    private List<Servicio> listaServicios;
     private double precioPaquete;
     private int status;
+    @ManyToMany
+    private List<Servicio> listaServicios;
 
     public Paquete() {
     }

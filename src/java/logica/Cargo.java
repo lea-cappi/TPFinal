@@ -2,15 +2,25 @@
 package logica;
 
 import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
-
+@Entity
 public class Cargo {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int idCargo;
+    @Basic
     private String nombre;
     private double sueldo;
-    private List<Empleado> listaEmpleados;
     private int status;
-
+    @OneToMany
+    private List<Empleado> listaEmpleados;
+    
     public Cargo() {
     }
 

@@ -2,12 +2,19 @@
 package logica;
 
 import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
+@Entity
 public class TipoServicio {
-    
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int idTipo;
+    @Basic
     private String nombre;
     private int status;
     @OneToMany

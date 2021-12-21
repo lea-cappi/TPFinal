@@ -3,10 +3,19 @@ package logica;
 
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
-
+@Entity
 public class Cliente {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int idCliente;
+    @Basic
     private String nombre;
     private String apellido;
     private String dni;
@@ -15,9 +24,10 @@ public class Cliente {
     private String direccion;
     private String telefono;
     private Date fechaNac;
-    private List<Venta> listaVentas;
     private int status;
-
+    @OneToMany
+    private List<Venta> listaVentas;
+    
     public Cliente() {
     }
 
